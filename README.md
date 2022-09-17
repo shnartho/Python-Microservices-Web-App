@@ -1,5 +1,5 @@
 # Python-Microservices-Web-App
-Web application using flask and microservices like docker
+Web application using flask and microservices (docker, kubernetes, helm)
 - Install Python
 - Creating python virtual environments
 - installing python vs code extensions
