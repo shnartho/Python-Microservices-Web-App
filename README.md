@@ -10,3 +10,10 @@ Web application using flask and microservices like docker
 - writing docker compose file
 - writing kubernetes manifest files for the application
 - creating helm chart
+
+
+<h4> Website is running on multiple Kubernetes pod using Helm</h4>
+
+[![helm1.png](https://i.postimg.cc/ZK3HcpP1/helm1.png)](https://postimg.cc/CzhbMZQN)
+
+[![kubecvweb.png](https://i.postimg.cc/054Dhj2P/kubecvweb.png)](https://postimg.cc/0rpzw8wB)
