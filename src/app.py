@@ -8,9 +8,10 @@ def fetchDetails():
     hostip = socket.gethostbyname(hostname)
     return str(hostname), str(hostip)
 
-@app.route("/")
+@app.route("/details")
 def hello_world():
-    return "<h1>Hi, Host machine Ip http://192.168.8.103 and Docker ip 192.168.59.101</h1>"
+    hostname, ip = fetchDetails()
+    return f"<h1>Host name {hostname} & Host machine Ip is {ip} </h1>"
 
 @app.route("/health")
 def health():
@@ -18,10 +19,9 @@ def health():
         status="UP"
     )
 
-@app.route("/detailss")
-def detailss():
-    hostname, ip = fetchDetails()
-    return render_template('index.html', Hostname = hostname, Ip = ip)
+@app.route("/")
+def details():
+    return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5001)
